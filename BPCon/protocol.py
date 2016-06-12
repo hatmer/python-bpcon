@@ -49,7 +49,7 @@ class BPConProtocol:
         self.peers = GroupManager(conf)
         self.peers.init_local_group()
         self.state = state
-        self.state.groups['G1'] = self.peers
+        #self.state.groups['G1'] = self.peers
 
         self.ctx = get_ssl_context(conf['peer_certs'])
         self.pending = None
