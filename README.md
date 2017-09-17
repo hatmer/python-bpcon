@@ -9,8 +9,7 @@ Byzantine Paxos is a more resilient version of the Paxos algorithm. To “Byzant
 
 python3.4, asyncio, websockets, pycrypto
 
-Usage
-=====
+<h2>Usage</h2>
 
 ```python
 python3 demo.py
