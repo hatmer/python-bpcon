@@ -9,12 +9,6 @@ Byzantine Paxos is a more resilient version of the Paxos algorithm. To “Byzant
 
 python3.4, asyncio, websockets, pycrypto
 
-<h2>Usage</h2>
-
-```python
-python3 demo.py
-```
-
 <h2>Protocol Description</h2>
 
 Python-BPCon is an implementation of the BPCon protocol that functions as an API for replicated key-value storage. It replicates updates to a database object to all the servers in the system.
