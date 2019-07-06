@@ -3,13 +3,9 @@ Python-BPCon
 
 Byzantine Paxos as specified by Lamport in [*Byzantizing Paxos by Refinement*](http://research.microsoft.com/en-us/um/people/lamport/tla/byzsimple.pdf).
 
-Byzantine Paxos is a more resilient version of the Paxos algorithm. To “Byzantine” an algorithm means to modify it such that the system that uses it is resilient to malicious nodes. BPCon is the byzantined version of PCon, a reduced form of Paxos derived via a computer-verified proof system.
-
-<h2>Requirements</h2>
-
-python3.4, asyncio, websockets, pycrypto
-
 <h2>Protocol Description</h2>
+
+Byzantine Paxos is a more resilient version of the Paxos algorithm. To “Byzantine” an algorithm means to modify it such that the system that uses it is resilient to malicious nodes. BPCon is the byzantined version of PCon, a reduced form of Paxos derived via a computer-verified proof system.
 
 Python-BPCon is an implementation of the BPCon protocol that functions as an API for replicated key-value storage. It replicates updates to a database object to all the servers in the system.
 
@@ -54,3 +50,6 @@ The proposing node receives 1b messages from its peers. If a quorum, i.e. at lea
 Each peer verifies the 1c message. It commits the proposed update and sends a 2b response if it is able to confirm the validity of the signed 1b messages. If the proposing node receives 2b messages from a quorum of peers it knows that its proposal was accepted.
 
 
+<h2>Requirements</h2>
+
+python3.4, asyncio, websockets, pycrypto
